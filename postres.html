@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/contacto.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <style>
+        /* Carousel styling */
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 79vh;
+          }
+        }
+
+        .navbar .nav-link {
+          color: rgb(0, 0, 0) !important;
+        }
+      </style>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark d-none d-lg-block"
+        style="z-index: 2000"
+      >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a
+            class="navbar-brand nav-link"
+            href="{{ url_for('inicio')}}"
+            target="_self"
+          >
+            <strong>ESPEbar</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href="{{ url_for('inicio')}}"
+                  target="_self"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{{ url_for('eventos')}}"
+                  target="_self"
+                  >Eventos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{{ url_for('contactos')}}"
+                  target="_self"
+                  >Contactos</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav d-flex flex-row">
+              <!-- Icons -->
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="{{ url_for('productos')}}"
+                  target="_self"
+                >
+                  <i class="fas fa-chevron-circle-down"> Menu</i>
+                </a>
+              </li>
+
+              <li class="nav-item me-3 me-lg-0">
+                <a
+                  class="nav-link"
+                  href="{{ url_for('index')}}"
+                  target="_self"
+                >
+                  <i class="fas fa-power-off"> Salir</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <!-- Product-->
+      
+    </header>
+    <!--Main Navigation-->
+  
+    <!--Main layout-->
+    <main class="my-5">
+      <div class="container">
+        <!--Section: Content-->
+        <section class="text-center">
+          <h4 class="mb-5"><strong>Postres</strong></h4>
+  
+          <img src="{{url_for ('static', filename = './images/postres.jpg')}}" width="900" alt="postres">
+        </section>
+        <!--Section: Content-->
+  
+      <!-- /Product-->
+      
+    </header>
+
+        <!--Footer-->
+        <footer class="bg-light text-lg-start">
+          <hr class="m-0" />
+    
+          <div class="text-center py-4 align-items-center">
+            <p>Encuentranos en:</p>
+            <a
+              href=""
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+    
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">ESPEbar</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!--Footer-->
+    <!-- BOOSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+    ></script>
+  </body>
+</html>
